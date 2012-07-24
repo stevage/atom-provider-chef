@@ -1,0 +1,16 @@
+{
+  "run_list": [
+    "recipe[dataset-provider]"
+  ],
+  "json_class": "Chef::Role",
+  "env_run_lists": {
+  },
+  "chef_type": "role",
+  "override_attributes": {
+  },
+  "description": "Source of data",
+  "name": "provider",
+  "default_attributes": {
+  }
+}
+

@@ -1,0 +1,30 @@
+{
+  "name": "dataset-provider",
+  "description": "Installs/Configures Atom Dataset Provider (for use by MyTardis)",
+  "long_description": "There is no documentation for the Atom Dataset Provider cookbook.\n",
+  "maintainer": "Steve Bennett",
+  "maintainer_email": "stevage@gmail.com",
+  "license": "WTFPL",
+  "platforms": {
+  },
+  "dependencies": {
+    "build-essential": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.0.1"
+}
