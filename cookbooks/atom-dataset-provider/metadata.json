@@ -1,5 +1,5 @@
 {
-  "name": "dataset-provider",
+  "name": "atom-dataset-provider",
   "description": "Installs/Configures Atom Dataset Provider (for use by MyTardis)",
   "long_description": "There is no documentation for the Atom Dataset Provider cookbook.\n",
   "maintainer": "Steve Bennett",

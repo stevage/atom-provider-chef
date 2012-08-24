@@ -1,6 +1,6 @@
 {
   "run_list": [
-    "recipe[dataset-provider]"
+    "recipe[atom-dataset-provider]"
   ],
   "json_class": "Chef::Role",
   "env_run_lists": {
