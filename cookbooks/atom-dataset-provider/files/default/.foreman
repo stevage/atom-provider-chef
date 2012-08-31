@@ -1,0 +1,4 @@
+app: atom
+user: root
+log: /opt/atom-dataset-provider/current/log
+

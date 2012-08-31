@@ -1,0 +1,2 @@
+atom_dataset_provider: bash /opt/atom-dataset-provider/current/provider.sh
+

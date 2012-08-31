@@ -6,6 +6,20 @@ ohai "reload_passwd" do
   plugin "passwd"
 end
 
+bash "set timezone" do
+  # It's pretty important that the dataset provider has the right time, as consumers rely on it to know if data is new.
+  # Obviously this should be configurable.
+  # If timezone not set to any Australian tz, make it Melbourne.
+  code <<-EOH
+  ls -l /etc/localtime | grep Australia > /dev/null; 
+  if [ $? -eq 1 ]; then 
+    ln -sf /usr/share/zoneinfo/Australia/Melbourne /etc/localtime
+  fi
+  
+  ntpdate 0.pool.ntp.org
+  EOH
+end
+
 user "atom" do
   action :create
   comment "Atom dataset provider"
