@@ -104,25 +104,34 @@ deploy_revision "atom-dataset-provider" do
       owner "atom"
       mode "0664"
     end
+    
+    ["/Microscopy/Biology", "/Microscopy/Materials",].each do |sampledir|
+      directory node["dataset-provider"]["share-path"]+sampledir do
+        owner "atom"
+        group "atom"
+        recursive true
+        only_if { node.chef_environment == "dev" }
+      end
+    end 
 
-    directory "/mnt/data/experiment1/dataset1" do
-       recursive true
-       only_if { node.chef_environment == "dev" }
+    [["/Microscopy/Materials", "ZnO_combs_on_ITO_glass.tif"], 
+     ["/Microscopy/Materials", "ica002.tif"],                 
+     ["/Microscopy/Materials", "manganese.spc"],              
+     ["/Microscopy/Materials", "manganese_dump.txt"],         
+     ["/Microscopy/Materials", "nickel.bmp"],
+     
+     ["/Microscopy/Biology", "ant.tif"],
+     ["/Microscopy/Biology", "mosquito.tif"],
+    ].each do |sampledir, samplefile|
+      cookbook_file node["dataset-provider"]["share-path"] + sampledir + "/" + samplefile do
+        owner "atom"
+        group "atom"
+        mode "0644"
+        source samplefile
+        only_if { node.chef_environment == "dev" }
+      end
     end
-
-    file "/mnt/data/experiment1/dataset1/testfile1.txt" do
-       owner "atom"
-       group "atom"
-       mode "0644"
-       content "A sample file."
-       only_if { node.chef_environment == "dev"}
-    end
-#    service "atom-dataset-provider" do
-#      start_command "/opt/atom-dataset-provider/current/provider.sh"
-#      stop_command "/opt/atom-dataset-provider/current/kill_provider.sh"       
-#      action [:enable]
-#    end	
-       
+          
   end
   restart_command do
     bash "activate_foreman" do

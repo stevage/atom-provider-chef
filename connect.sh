@@ -1,2 +1,3 @@
 #/bin/bash
-ssh ubuntu@115.146.92.243 -i nectar.pem
+source ./settings.sh
+ssh $CHEF_ACCOUNT@$CHEF_IP -i nectar.pem

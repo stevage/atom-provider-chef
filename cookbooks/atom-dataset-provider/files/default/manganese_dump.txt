@@ -1,0 +1,58 @@
+Content of E:\QUANTA200\EDAX ON QUANTA200\10-1 Mn dark area.spc.spc
+
+File Version : 0.570
+AppVersion : 1.000
+Collect Date/Time : 25/07/2011 18:33:46:91
+File Size : 19840 Byte
+Date Start : 3840
+Material (Label) : 
+Sample Type (Label) : sample 2 - 20 kv area
+eV per Channel : 10
+Analysis Type : 4
+Preset : 120.0
+Max Counts of Spectrum : 6622
+Max Peak Channel : 149
+
+Param Struct Type:
+Sample Type : 0
+Starting Energy : 0.0000
+Ending Energy : 0.0000
+Live Time : 120.0
+Tilt : 0.30
+Take Off Angle : 25.19
+Beam Current Factor : 1.000
+Detector Resolution : 180.04
+Detector Type : 12
+Parlodion Light Shield Thickness : 0.00
+Aluminum Light Shield Thickness : 0.08
+Be Window Thickness : 0.00
+Gold Light Shield Thickness : 0.01
+Si Dead Layer Thickness : 0.09
+Si Live Layer Thickness : 0.30
+X-Ray Incidence Angle : 0.00
+Azimuth Angle of Detector : 45.00
+Elevation Angle of Detector : 25.00
+K-Line B-Coefficient : 0.6055
+K-Line C-Coefficient : 1.0000
+Tail Function Max Channel : 6.00
+Tail Height Adjustment Percentage : 3.00
+Acc. Voltage : 19.981
+Ap Window Thickness : 0.60
+
+X-Tilt Angle of mThin : 0.00
+Y-Tilt Angle of mThin : 0.00
+Data Type (TEM/SEM) : 0
+Accumulated Spectrum Counts : 250776
+
+Number of Peak ID Elements : 6
+Peak ID Elements:
+Atomic Numbers            8          13          14          15          19          25
+Line Numbers              1           1           1           1           1           1
+Energy               0.5150      1.4853      1.7388      2.0128      3.3156      5.8972
+Height                 2209        6622         491         160         124        1056
+
+Number of ROI's : 0
+
+Number of Displayed Labels : 0
+
+File Name : \\Support-pc\Users Images\A_Pilkington\PEO coloured ESEM EDX 25 July 2011\10-1 Mn dark area.spc

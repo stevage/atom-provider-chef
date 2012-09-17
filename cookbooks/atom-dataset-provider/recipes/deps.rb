@@ -5,7 +5,7 @@ if node['platform_family'] == "debian"
     end.run_action(:run)
 end
 
-include_recipe "build-essential"
+#include_recipe "build-essential"
 
 if platform?("ubuntu","debian")
   %w{g++ curl libssl-dev apache2-utils git-core}.each do |pkg|
